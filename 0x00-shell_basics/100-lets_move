@@ -1,2 +1,2 @@
 #!/bin/bash
-mv -t '[[:UPPER:]]*' /tmp/u 
+mv [[:UPPER:]]* /tmp/u
