@@ -1,2 +1,2 @@
-#!/min/bash
+#!/bin/bash
 ls -amvp
