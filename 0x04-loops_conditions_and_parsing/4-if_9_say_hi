@@ -6,9 +6,9 @@ counter=0
 
 while [ $counter -lt 10 ]; do
 	if [ $counter -eq 8 ]; then
-	echo "Hi"
+		echo "Hi"
 	else
-	echo "Best School"
+		echo "Best School"
 	fi
 
 	((counter++))
