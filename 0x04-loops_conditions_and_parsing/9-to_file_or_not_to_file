@@ -8,7 +8,7 @@
 #if the file is a regular file: school is a regular file
 #if the file is not a regular file: (nothing)
 
-if [ -e "school" ];
+if [ -e "school" ]
 then
 	echo "school file exists"
 	if [ -s "school" ]
