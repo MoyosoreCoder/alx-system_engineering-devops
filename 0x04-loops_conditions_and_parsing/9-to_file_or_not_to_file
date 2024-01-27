@@ -9,16 +9,16 @@
 #if the file is a regular file: school is a regular file.
 #if the file is not a regular file: (nothing)
 
-if [ -e "$file_path" ];
+if [ -e "school" ];
 then
 	echo "school file exists"
-	if [ -s "$file_path" ];
+	if [ -s "school" ];
 	then
 		echo "school file is not empty"
 	else
 		"school file is empty"
 	fi
-	if [ -f "$file_path" ];
+	if [ -f "school" ];
 	then
 		echo "school is a regular file"
 	fi
