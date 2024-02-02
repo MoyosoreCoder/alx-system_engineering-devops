@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#A Bash script that pings an IP address passed as an argumenit
+#A Bash script that pings IP address passed as an argumenit
 if [ $# -eq 0 ]
 then
 	echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
