@@ -1,0 +1,24 @@
+https://imgur.com/a/8YkXjlj
+# ANSWERS TO PRACTICAL QUESTIONS
+- server is a hardware device or software that processes requests sent over a network and replies to them. A client is the device that submits a request and waits for a response from the server. The computer system that accepts requests for online files and transmits those files to the client is referred to as a "server" in the context of the Internet.
+
+- The domain name serves as a human-readable label used to identify and locate resources on the internet. Its primary role is to provide a more user-friendly way to access websites, email servers, and other internet resources that are identified by numerical IP addresses
+
+- The "www" in "www.foobar.com" typically refers to a hostname, and it is commonly associated with a DNS record called a "CNAME" (Canonical Name) record. This record is used to alias one domain name to another. It essentially points the hostname "www" to the canonical domain name "foobar.com". However, it's worth noting that it could also be an A record (IPv4 address) or AAAA record (IPv6 address) pointing directly to an IP address. The specific DNS configuration depends on how the website's domain is set up.
+
+- Web server acts as the intermediary between clients (web browsers or other client applications) and the web application or website, handling incoming requests, serving content, and managing communication between clients and the underlying application or website.
+
+- Application server acts as the runtime environment for executing the code that powers the web application, providing essential services and resources to support its operation and functionality.
+
+- Database serves as the backbone of web applications, providing a reliable and efficient means of storing, managing, and retrieving data critical for the application's functionality and operation.
+
+- HTTP/HTTPS serves as the protocol for communication between the user's computer (client) and the server. This protocol enables the transfer of data, such as web pages, images, and other resources, over the Internet in a standardized and interoperable manner.
+
+# EXPLANATION ON SPOF
+- Mitigating SPOFs typically involves implementing redundancy, fault tolerance, and failover mechanisms to ensure that if one component fails, there are backup systems or alternative routes available to maintain service continuity. This may include strategies such as deploying redundant servers, utilizing load balancers for traffic distribution, implementing backup power sources, establishing redundant network connections, and regularly monitoring and maintaining system health and security.
+
+# EXPLANATION ON DOWNTIME
+- downtime during maintenance is an unavoidable aspect of managing and updating web server infrastructure. However, organizations can minimize the impact of downtime by scheduling maintenance activities during off-peak hours, communicating maintenance schedules to users in advance, and employing strategies to streamline deployment processes and reduce downtime duration. Additionally, implementing redundant systems and failover mechanisms can help mitigate the impact of downtime on service availability.
+
+# EXPLANATION ON Cannot scale if too much incoming traffic
+- When incoming traffic exceeds the capacity of the infrastructure to handle it, the performance of the website or web application can degrade significantly. Users may experience slow loading times, timeouts, or errors when trying to access the service. This can result in a poor user experience and frustration among users, leading to decreased engagement and potential loss of business.
