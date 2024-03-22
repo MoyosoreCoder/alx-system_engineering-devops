@@ -1,0 +1,28 @@
+https://imgur.com/a/dIl9C1J
+#Reason for adding 1 server
+- A server is the fundamental unit for hosting applications and services.
+# Explanation
+- The server will host various components of the infrastructure, such as the web server, application server, and potentially the database. It is the execution environment for the software that powers the web application.
+
+#Reason for adding 1 Load-Balancer (HAProxy) Configured as a Cluster
+- Load balancing improves performance, scalability, and availability by distributing incoming traffic across multiple servers.
+#Explanation
+- The load balancer (HAProxy) acts as an intermediary between clients and the servers. It distributes incoming requests among multiple servers to prevent overload on a single server, optimize resource utilization, and ensure high availability. Configuring it as a cluster adds redundancy, meaning if one load balancer fails, another can seamlessly take over.
+
+#Reason for Split Components (Web Server, Application Server, Database) with Their Own server
+- Isolating components improves security, scalability, and maintainability.
+#Explanation
+- Web Server hosts static content, handles HTTP requests, and serves as the entry point for users. Isolating the web server allows for easier scaling and maintenance.- Application Server: Hosts the application logic and business processes. Separating it from the web server enhances security and allows for independent scaling based on application workload.
+- Database Server: Stores and manages the application's data. Isolating the database improves data integrity, security, and enables scalability by allowing for dedicated database resources.
+
+#Explanation of Additional Elements
+
+#Reason for adding Load Balancer as a Cluster
+- Improves fault tolerance and ensures continuous availability.
+#Explanation
+- Configuring HAProxy as a cluster ensures that if one load balancer node fails, another can take over seamlessly. This enhances fault tolerance, eliminates single points of failure, and provides uninterrupted service to users.
+
+#Reason for adding Split Components with Their Own Server
+- Enhances security, scalability, and maintainability.
+#Explanation
+- Isolating components onto dedicated servers allows for independent scaling, easier maintenance, and improved security. It also facilitates the deployment of updates or changes to one component without affecting others.

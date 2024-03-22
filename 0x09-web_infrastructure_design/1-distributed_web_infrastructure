@@ -1,0 +1,24 @@
+https://i.imgur.com/K0wBAbf.jpeg
+#ANSWERS TO QUESTIONS
+- Adding more web servers to a web infrastructure enhances scalability, reliability, and performance, allowing organizations to better serve their users, withstand traffic fluctuations, and maintain service availability under varying conditions.
+
+- In the designed infrastructure, the load balancer (HAproxy) is configured with a round-robin distribution algorithm. Here's an explanation of how this algorithm works
+
+- In the designed infrastructure with HAproxy configured in an Active-Active setup, all load balancer instances actively participate in serving traffic, ensuring scalability, fault tolerance, and efficient load distribution across multiple servers.
+
+- A database Primary-Replica (or Master-Slave) cluster is a configuration where there is one primary database server (the master) and one or more replica database servers (the slaves). The primary purpose of this setup is to achieve high availability, fault tolerance, and scalability for database systems. Here's how it typically
+
+- The primary node is responsible for handling write operations, ensuring data consistency, and serving both write and read operations when necessary. Replica nodes, on the other hand, are read-only copies of the dataset used for processing read operations and offloading the read workload from the primary node, thereby improving performance and scalability for read-heavy application
+
+EXPLANATION
+- Single Points of Failure (SPOFs) exist in several components, potentially impacting the system's reliability and availability:
+Single Load Balancer (HAproxy)
+Single Database Server (MySQL)
+Single Application Server
+Networking Infrastructure
+
+- Without a firewall, the infrastructure lacks a barrier between the internal network components (e.g., web servers, application servers, database servers) and the external internet.
+This exposes the infrastructure to various security threats, including unauthorized access, denial-of-service (DoS) attacks, malware infections, and intrusion attempts.
+
+- The lack of monitoring increases the risk of unexpected downtime and service disruptions due to undetected issues or failures.
+Critical incidents, such as server crashes, application errors, or network outages, may occur without warning, leading to prolonged service outages and business interruptions.

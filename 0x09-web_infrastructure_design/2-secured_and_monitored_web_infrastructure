@@ -1,0 +1,27 @@
+https://imgur.com/a/g1sKY0s
+# You must be able to explain some specifics about this infrastructure, why?
+- 3 Firewalls: Firewalls are added for security purposes, protecting the web infrastructure from unauthorized access and potential cyber threats.
+
+- SSL Certificate for HTTPS: Why: HTTPS is used to secure the communication between clients and the web server, ensuring data confidentiality and integrity.
+
+- Monitoring Clients: Monitoring is critical for maintaining the health, performance, and security of the web infrastructure
+
+#Explanation of Additional Elements
+- Traffic Served Over HTTPS: To ensure secure and encrypted communication between clients and the web server
+
+- Monitoring Used For: proactively identify and respond to issues, optimize performance, and ensure compliance.
+
+- How Monitoring Tool Collects Data: To track and analyze key metrics for informed decision-making.
+
+- Monitoring Web Server QPS: To assess and optimize the web server's handling of incoming requests.
+
+#QUESTIONS AND ANSWERS
+- Firewalls (Firewall 1, Firewall 2, Firewall 3): To control and monitor incoming and outgoing network traffic, protecting the web servers from potential security threats and unauthorized access.
+
+- Serving traffic over HTTPS is crucial for safeguarding the confidentiality, integrity, and authenticity of data exchanged between users and websites. It has become a standard practice to ensure a secure and trustworthy online experience for users.
+
+- Monitoring is a proactive and essential practice that contributes to the overall stability, security, and efficiency of IT environments. It empowers administrators to maintain optimal system performance, address issues promptly, and ensure a reliable and secure computing environment.
+
+- It's common for monitoring solutions to use a combination of these methods to provide comprehensive insights into the performance, availability, and security of IT environments.
+
+- Choose a monitoring tool that supports QPS tracking and is suitable for your environment. Popular monitoring tools include Prometheus, Grafana, Nagios, Zabbix, and Datadog.
