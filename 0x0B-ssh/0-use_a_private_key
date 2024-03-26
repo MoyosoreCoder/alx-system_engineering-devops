@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Connecting to a server through a private key path
 
-ssh -i ~/.ssh/id_rsa ubuntu@100.25.155.72
+ssh -i ~/.ssh/id_rsa ubuntu@52.91.153.180
