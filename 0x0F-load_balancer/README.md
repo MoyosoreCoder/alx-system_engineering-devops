@@ -11,7 +11,7 @@ The value of the custom HTTP header must be the hostname of the server Nginx is 
 Write 0-custom_http_response_header so that it configures a brand new Ubuntu machine to the requirements asked in this task
 Ignore SC2154 for shellcheck
 
-Task 1 - Install and configure HAproxy on your lb-01 server.
+Task 1 - Install and configure HAproxy on your lb-01 server
 
 Requirements:
 
