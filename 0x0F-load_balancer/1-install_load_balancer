@@ -19,4 +19,3 @@ server 399089-web-01 52.91.153.180:80 check
 server 399089-web-02 54.164.73.177:80 check
 " | sudo tee /etc/haproxy/haproxy.cfg
 sudo service haproxy start
-
