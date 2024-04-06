@@ -38,12 +38,12 @@ frontend maykayconcept-frontend
         mode http
         http-request redirect scheme https code 301 unless { ssl_fc }
         http-request set-header X_Forwarded-Proto http
-        default_backend maykay-backend
+        default_backend maykayconcept-backend
 
 frontend maykayconcept-frontend-https
-        bind *:443 ssl crt /etc/haproxy/certs/clickviral.tech.pem
+        bind *:443 ssl crt /etc/haproxy/certs/maykayconcept.tech.pem
         http-request set-header X-Forwarded-Proto https
-        default_backend maykay-backend
+        default_backend maykayconcept-backend
 
 backend maykayconcept-tech-backend
 	mode http
