@@ -1,0 +1,37 @@
+# rules.before
+  2 #
+  3 # rules.before
+  4 #
+  5 # Rules that should be run before the ufw command line added rules. Custom
+  6 # rules should be added to one of these chains:
+  7 #   ufw-before-input
+  8 #   ufw-before-output
+  9 #   ufw-before-forward
+ 10 *nat
+ 11 :PREROUTING ACCEPT [0:0]
+ 12 -A PREROUTING -p tcp --dport 8080 -j REDIRECT --to-port 80
+ 13 COMMIT
+ 14 
+ 15 # Don't delete these required lines, otherwise there will be errors
+ 16 *filter
+ 17 :ufw-before-input - [0:0]
+ 18 :ufw-before-output - [0:0]
+ 19 :ufw-before-forward - [0:0]
+ 20 :ufw-not-local - [0:0]
+ 21 # End required lines
+ 22 
+ 23 
+ 24 # allow all on loopback
+ 25 -A ufw-before-input -i lo -j ACCEPT
+ 26 -A ufw-before-output -o lo -j ACCEPT
+ 27 
+ 28 # quickly process packets for which we already have a connection
+ 29 -A ufw-before-input -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+ 30 -A ufw-before-output -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+ 31 -A ufw-before-forward -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+ 32 
+ 33 # drop INVALID packets (logs these in loglevel medium and higher)
+ 34 -A ufw-before-input -m conntrack --ctstate INVALID -j ufw-logging-deny
+ 35 -A ufw-before-input -m conntrack --ctstate INVALID -j DROP
+ 36 
+ 37 # ok icmp codes for INPUT
