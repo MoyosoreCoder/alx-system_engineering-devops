@@ -12,7 +12,7 @@ def number_of_subscribers(subreddit):
     A method that checks if the argument passed is not a valid
     reddit subscriber
     """
-    url = f"https://www.reddit.com/r/{subreddit}/about.json"
+    url = 'https://www.reddit.com/r/{}/about.json'.format(subreddit)
     user_agent = 'User Agent'
     headers = {
             'User-Agent': user_agent
