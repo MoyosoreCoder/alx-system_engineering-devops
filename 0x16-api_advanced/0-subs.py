@@ -6,18 +6,20 @@ subreddit is given, the function should return 0.
 """
 import requests
 
+
 def number_of_subscribers(subreddit):
     """
     A method that checks if the argument passed is not a valid
     reddit subscriber
     """
-    url = f"https://www.reddit.com/r/{subreddit}/about.json"
-    headers = {"User-Agent": "My Reddit API Client"}
+    url = "https://www.reddit.com/r/{subreddit}/about.json"
+    user_agent = 'User Agent'
+    headers = {
+            'User-Agent': user_agent
+            }
     response = requests.get(url, headers=headers, allow_redirects=False)
-
-    if response.status_code == 200 and not response.is_redirect:
-        data = response.json()
-        subscribers = data["data"]["subscribers"]
-        return subscribers
+    if response.status_code == 200:
+        result = response.json().get('data')
+        return result.get('subscribers')
     else:
         return 0
